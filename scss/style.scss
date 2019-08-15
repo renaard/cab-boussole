@@ -1,0 +1,260 @@
+/*
+ * Agency: 	lesmanifestes.com
+ * Date:   	Aug 8, 2019.
+ * Project:	La Boussole en ligne
+ * Dev:		Jennifer Martinez
+ *
+ */
+
+/* Variables */
+
+   $blue: #2F3B83;
+$mustard: #CE952C;
+   $gray: #262626;
+ $yellow: #E8A402;
+   
+   $lato: 'Lato', sans-serif;
+
+
+/* Main Settings */
+
+body {
+	font-family: $lato;
+	}
+
+/* Classes */
+
+.disclamer {
+	font-family: $lato;
+	font-size: 13px;
+	color: $gray;
+	font-weight: 300;
+	}
+.disclamer-white{
+	font-family: $lato;
+	font-size: 13px;
+	color: white;
+	font-weight: 300;
+	text-align: center;
+	}
+
+.mtop {
+	margin-top: 70px;
+	}
+
+.ptop {
+	padding-top: 130px;
+	}
+
+.mt-4 {
+	color: $blue;
+	font-family: $lato;
+	font-weight: 900;
+	letter-spacing: -1;
+	font-size: 2.2em;
+	}
+
+.mt-5 {
+	color: $mustard;
+	font-family: $lato;
+	font-weight: 900;
+	letter-spacing: -1;
+	font-size: 2.2em;
+	text-align: center;
+	}
+
+.mt-line {
+	border-top: 5px $blue solid;
+	width: 80px;
+	margin-bottom: 30px;
+	}
+
+.mt-img-1 {
+	background: url('../img/boussole_trans_01.png') no-repeat top right;
+	background-size: 800px;
+	background-position-x: 791px;
+	}
+	
+.mt-img-2 {
+	background: url('../img/boussole_trans_02.png') no-repeat top left, url('../img/boussole_trans_03.png') no-repeat top right;
+	background-size: 650px,1100px;
+	background-position-x: -25px,100%;
+	}
+
+.mt-img-3 {
+	background: url('../img/boussole_trans_04.png') no-repeat top left, url('../img/boussole_trans_05.png') no-repeat top right;
+	background-size: 700px, 1300px;
+	background-position-x: 800px, 0px;
+	}
+
+.mt-img-4 {
+	background: url('../img/boussole_trans_06.png') no-repeat top right;
+	background-size: cover;
+	}
+
+
+.mt-mg {
+	color: $mustard;
+	letter-spacing: -1;
+	font-weight: 900;
+	font-size: 18px;
+	margin-top: 30px;
+}
+
+.btn-blue {
+    background: #2f3b83;
+    color: #fff;
+    border-radius: 7px;
+    text-transform: uppercase;
+    font-size: 0.7em;
+       padding: 1.30em 1em;
+}
+
+.btn-yellow {
+    background: $yellow;
+    color: #fff;
+    border-radius: 7px;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    padding: 1.30em 6em;
+	}
+
+.mt-mb {
+	padding-bottom: 200px;
+}
+
+.mt-mb-s {
+	padding-bottom: 100px;
+}
+
+.mt-mb-t {
+	padding-bottom: 100px;
+}
+
+/* Media Queries */
+
+// Tablet
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+	.mt-img-1 {
+	    background-size: 503px;
+	    background-position-x: 382px;
+	    background-position-y: 155px;
+	}
+	
+	.mt-img-2 {
+	    background-size: 300px,1100px;
+	    background-position-x: 10px,100%;
+	    background-position-y: 120px,100%;
+	}
+	
+	.mt-img-3 {
+	    background-size: 200px,1300px;
+	    background-position-x: 490px,0px;
+		background-position-y: 125px,0px;
+	}
+	
+	.mt-mb {
+	    padding-bottom: 32px;
+	}
+	
+	.mt-mb-s {
+		padding-bottom: 0px;
+	}
+	
+	.mt-mb-t {
+	    padding-bottom: 30px;
+	}
+	
+	.mt-mg {
+    margin-top: 30px;
+    }
+    
+    .ptop {
+	padding-top: 100px;
+	}
+}
+
+// Mobile
+@media screen and (max-width: 39.9375em) {
+	
+	.mt-img-1 {
+	    background-size: 253px;
+	    background-position-x: 140px;
+	    background-position-y: 490px;
+	}
+	
+	.mt-img-2 {
+	    background-size: 260px,1100px;
+	    background-position-x: 110px,100%;
+	    background-position-y: 440px,100%;
+	}
+	
+	.mt-img-3 {
+	    background-size: 200px,1300px;
+	    background-position-x: 190px,0px;
+	    background-position-y: 470px,100%;
+	}
+	
+	.mt-mb {
+	    padding-bottom: 165px;
+	}
+	
+	.mt-mb-s {
+		padding-bottom: 0px;
+	}
+	
+	.mt-mb-t {
+	    padding-bottom: 30px;
+	}
+	
+	.mt-mg {
+    margin-top: 30px;
+    }
+    
+    .ptop {
+	padding-top: 100px;
+	}
+	
+	.mtop {
+	    margin-top: 10px;
+	}
+	
+}
+
+
+/* Animation on scrolling */
+
+
+// Animation element
+.animation-element {
+	}
+
+// Bounce up animation for the subject
+.bounce-up .subject {
+	opacity: 0;
+	-moz-transition: all 700ms ease-out;
+	-webkit-transition: all 700ms ease-out;
+	-o-transition: all 700ms ease-out;
+	transition: all 700ms ease-out;
+	-moz-transform: translate3d(0px, 200px, 0px);
+	-webkit-transform: translate3d(0px, 200px, 0px);
+	-o-transform: translate(0px, 200px);
+	-ms-transform: translate(0px, 200px);
+	transform: translate3d(0px, 200, 0px);
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	}
+
+.bounce-up.in-view .subject {
+	opacity: 1;
+	-moz-transform: translate3d(0px, 0px, 0px);
+	-webkit-transform: translate3d(0px, 0px, 0px);
+	-o-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px);
+	transform: translate3d(0px, 0px, 0px);
+	}
+
+
+
+
